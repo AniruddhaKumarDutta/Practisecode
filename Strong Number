@@ -1,0 +1,29 @@
+#include<stdio.h>
+int main()
+{
+    int s,n,fact=1,d,m=0;
+    printf("enter a number");
+    scanf("%d",&n);
+    s = n;
+    for(int i = 1;i<s;i++)
+        {
+            d = s%10;
+            for(int j = 1;j<d;j++)
+                {
+                    fact = fact * j;
+                }
+            m = m + fact;
+            d = s/10;
+        }
+
+    if(n==m)
+        {
+            printf("the number is strong number");
+        }
+        else
+        {
+            printf("the number is not strong number");
+        }
+
+
+}
